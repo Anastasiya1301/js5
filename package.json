@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "notyf": "^3.10.0",
     "uuid": "^13.0.0"
   }
 }
