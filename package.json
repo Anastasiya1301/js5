@@ -10,6 +10,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "chart.js": "^4.5.1",
+    "nanoid": "^5.1.6",
     "notyf": "^3.10.0",
     "uuid": "^13.0.0"
   }

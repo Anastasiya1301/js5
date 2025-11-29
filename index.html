@@ -1,19 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link rel="stylesheet" href="dist/basicLightbox.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  </head>
+  <body>
+    <!-- <div>
+      <canvas id="myChart"></canvas>
+    </div> -->
+    <button class="create" type="button">Create</button>
+    <!-- <ul>
+      <li>
+        <button class="success" type="button">Success</button>
+      </li>
+      <li>
+        <button class="error" type="button">Error</button>
+      </li>
+    </ul> -->
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <!-- <script src="./node_modules/basiclightbox/dist/basicLightbox.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const content = document.createElement("div");
+      const h1 = document.createElement("h1");
+      const p = document.createElement("p");
+      h1.textContent = "Create element";
+      p.textContent = "Hello World";
+      content.appendChild(h1);
+      content.appendChild(p);
+      const instance = basicLightbox.create(content)
+      document.querySelector("create").onClick = instance.show
+    </script>
+     <!-- <script>
+    //   const chartContainer = document.querySelector("#myChart");
+    //   console.log(chartContainer); -->
+     <!-- //   new Chart(chartContainer, {
+    //     type: "doughnut",
+    //     data: {
+    //       labels: ["Red", "Blue", "Yellow"],
+    //       datasets: [
+    //         "Січень",
+    //         "Лютий",
+    //         "Березень",
+    //         "Квітень",
+    //         "Травень",
+    //         "Липень",
+    //         {
+    //           label: "My First Dataset",
+    //           data: [300, 50, 100, 40, 110, 15],
+    //           backgroundColor: [
+    //             "red",
+    //             "blue",
+    //             "yellow",
+    //             "green",
+    //             "pink",
+    //             "grey"
+    //           ],
+    //           hoverOffset: 4,
+    //           borderColor: "black"
+    //         },
+    //       ],
+    //     },
+    //   });
 
-</head>
-<body>
-    <ul>
-        <li>
-            <button></button>
-        </li>
-    </ul>
-        <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    new Chart(chartContainer, {
+        data: {
+            datasets: [{
+            type: 'bar',
+            label: 'Кількість відвідувачів',
+            data: [10000, 2000, 30000, 4000]
+        }, {
+            type: 'line',
+            label: 'Продажі',
+            data: [12, 56, 22, 73],
+        }],
+            labels: ['January', 'February', 'March', 'April', "May"]
+        }
+    }) -->
+    <!-- </script> -->
+    <!-- <script>
+      let notyf = new Notyf({
+        duration: 2000,
+        position: {
+          x: "right",
+          y: "top",
+        },
+        types: [
+          {
+            type: "success",
+            background: "green",
+            message: "Well done!",
+            duration: 5000,
+            position: {
+              x: "center",
+              y: "top",
+            },
+            dismissible: true,
+          },
+          {
+            type: "error",
+            background: "red",
+            message: "Something is wrong",
+            duration: 5000,
+            position: {
+              x: "right",
+              y: "top",
+            },
+            dismissible: true,
+          },
+          {
+            type: "information",
+            background: "blue",
+            message: "Your opinion is very important!",
+            duration: 5000,
+            position: {
+              x: "right",
+              y: "center",
+            },
+            dismissible: true,
+          },
+          {
+            type: "warning",
+            background: "orange",
+            message: "Be careful with your conf data",
+            duration: 5000,
+            position: {
+              x: "left",
+              y: "center",
+            },
+            dismissible: true,
+          },
+        ],
+      }); -->
+    <!-- </script> -->
     <script type="module" src="./js/index.js"></script>
-</body>
+  </body>
 </html>
